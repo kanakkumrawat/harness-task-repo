@@ -1,6 +1,6 @@
 service:
-  name: pyhton_deployement
-  identifier: pyhton_deployement
+  name: java_deployement
+  identifier: java_deployement
   serviceDefinition:
     type: Kubernetes
     spec:
