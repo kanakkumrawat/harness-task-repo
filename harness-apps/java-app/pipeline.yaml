@@ -100,7 +100,7 @@ pipeline:
                   spec:
                     skipDryRun: false
           service:
-            serviceRef: pyhton_deployement
+            serviceRef: java_deployement
         tags: {}
         failureStrategies:
           - onFailure:
