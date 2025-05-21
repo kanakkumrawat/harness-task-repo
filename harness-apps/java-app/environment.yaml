@@ -1,5 +1,5 @@
 environment:
-  name: harness_env
+  name: harness_java_env
   identifier: java_env
   description: ""
   tags: {}

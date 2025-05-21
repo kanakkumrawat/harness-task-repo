@@ -1,5 +1,5 @@
 environment:
-  name: harness_env
+  name: harness_python_env
   identifier: python_env
   description: ""
   tags: {}
