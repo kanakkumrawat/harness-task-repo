@@ -20,7 +20,7 @@ pipeline:
           cloneCodebase: true
           caching:
             enabled: true
-            override: true
+            override: false
           execution:
             steps:
               - step:
