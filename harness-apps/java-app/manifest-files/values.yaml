@@ -1,0 +1,6 @@
+servicePort: 8000
+region: us-west2
+project_id: proven-mercury-459707-h7
+artifactRepo: my-gcr-repo
+imageName: java-image
+tag: <+codebase.commitSha>

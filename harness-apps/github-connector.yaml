@@ -1,0 +1,26 @@
+connector:
+  name: github_latest_connector
+  identifier: github_latest_connector
+  description: ""
+  accountIdentifier: oDpl61NgTYCzXYrTgafGAg
+  orgIdentifier: default
+  projectIdentifier: default_project
+  type: Github
+  spec:
+    url: https://github.com/kanakkumrawat
+    validationRepo: harness-task-repo
+    authentication:
+      type: Http
+      spec:
+        type: UsernameToken
+        spec:
+          username: kanakkumrawat
+          tokenRef: github-pat
+    apiAccess:
+      type: Token
+      spec:
+        tokenRef: github-pat
+    executeOnDelegate: false
+    proxy: false
+    ignoreTestConnection: false
+    type: Account

@@ -1,0 +1,28 @@
+service:
+  name: pyhton_deployement
+  identifier: pyhton_deployement
+  serviceDefinition:
+    type: Kubernetes
+    spec:
+      manifests:
+        - manifest:
+            identifier: java_manifest
+            type: K8sManifest
+            spec:
+              store:
+                type: Github
+                spec:
+                  connectorRef: github_latest_connector
+                  gitFetchType: Branch
+                  paths:
+                    - harness-apps/java-app/manifest-files/deployment.yaml
+                    - harness-apps/java-app/manifest-files/service.yaml
+                  repoName: harness-task-repo
+                  branch: main
+              valuesPaths:
+                - harness-apps/java-app/manifest-files/values.yaml
+              skipResourceVersioning: false
+              enableDeclarativeRollback: false
+  gitOpsEnabled: false
+  orgIdentifier: default
+  projectIdentifier: default_project

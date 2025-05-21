@@ -1,0 +1,16 @@
+connector:
+  name: gcp_connector
+  identifier: gcp_connector
+  description: ""
+  accountIdentifier: oDpl61NgTYCzXYrTgafGAg
+  orgIdentifier: default
+  projectIdentifier: default_project
+  type: Gcp
+  spec:
+    credential:
+      type: ManualConfig
+      spec:
+        secretKeyRef: gcp-secrets
+    executeOnDelegate: false
+    proxy: false
+    ignoreTestConnection: false

@@ -1,0 +1,13 @@
+infrastructureDefinition:
+  name: java_app_infra
+  identifier: java_app_infra
+  orgIdentifier: default
+  projectIdentifier: default_project
+  environmentRef: java_env
+  deploymentType: Kubernetes
+  type: KubernetesDirect
+  spec:
+    connectorRef: k8s
+    namespace: java-app
+    releaseName: release-<+INFRA_KEY_SHORT_ID>
+  allowSimultaneousDeployments: true

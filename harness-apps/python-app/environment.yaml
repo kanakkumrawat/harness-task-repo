@@ -1,0 +1,8 @@
+environment:
+  name: harness_env
+  identifier: python_env
+  description: ""
+  tags: {}
+  type: PreProduction
+  orgIdentifier: default
+  projectIdentifier: default_project

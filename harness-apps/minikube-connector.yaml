@@ -1,0 +1,14 @@
+connector:
+  name: k8s
+  identifier: k8s
+  description: ""
+  accountIdentifier: oDpl61NgTYCzXYrTgafGAg
+  orgIdentifier: default
+  projectIdentifier: default_project
+  type: K8sCluster
+  spec:
+    credential:
+      type: InheritFromDelegate
+    delegateSelectors:
+      - kubernetes-delegate-latest
+    ignoreTestConnection: false
