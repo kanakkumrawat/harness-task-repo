@@ -1,4 +1,4 @@
-FROM openjdk:17-alpine
+FROM bitnami/java:latest
 
 WORKDIR /app
 
