@@ -3,7 +3,7 @@ infrastructureDefinition:
   identifier: python_app_infra
   orgIdentifier: default
   projectIdentifier: default_project
-  environmentRef: python_env
+  environmentRef: harness_env
   deploymentType: Kubernetes
   type: KubernetesDirect
   spec:
