@@ -1,6 +1,6 @@
 service:
   name: python_deployement
-  identifier: python_deployement
+  identifier: python_deployement_service
   serviceDefinition:
     type: Kubernetes
     spec:

@@ -1,6 +1,6 @@
 service:
   name: java_deployement
-  identifier: java_deployement
+  identifier: java_deployement_service
   serviceDefinition:
     type: Kubernetes
     spec:
