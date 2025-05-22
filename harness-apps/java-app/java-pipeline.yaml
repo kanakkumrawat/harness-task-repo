@@ -63,7 +63,7 @@ pipeline:
         spec:
           deploymentType: Kubernetes
           environment:
-            environmentRef: java_env
+            environmentRef: harness_env
             deployToAll: false
             infrastructureDefinitions:
               - identifier: java_app_infra

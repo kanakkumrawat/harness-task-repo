@@ -63,7 +63,7 @@ pipeline:
         spec:
           deploymentType: Kubernetes
           environment:
-            environmentRef: python_env
+            environmentRef: harness_env
             deployToAll: false
             infrastructureDefinitions:
               - identifier: python_app_infra
