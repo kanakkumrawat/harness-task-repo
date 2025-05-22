@@ -100,7 +100,7 @@ pipeline:
                   spec:
                     skipDryRun: false
           service:
-            serviceRef: java_deployement
+            serviceRef: java_deployement_service
         tags: {}
         failureStrategies:
           - onFailure:
